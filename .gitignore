@@ -1,0 +1,29 @@
+# Secrets - NEVER commit
+.env
+.env.local
+*.key
+
+# Vector store - regenerated on first run
+chroma_db/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradio
+flagged/
+.gradio/

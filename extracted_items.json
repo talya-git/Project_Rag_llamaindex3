@@ -1,0 +1,1431 @@
+{
+  "schema_version": "1.0",
+  "items": {
+    "decisions": [
+      {
+        "title": "UI Framework",
+        "summary": "React is chosen as the UI framework for building the application.",
+        "tags": [
+          "react",
+          "ui"
+        ],
+        "id": "dec-001",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "title": "Routing",
+        "summary": "The project uses BrowserRouter for navigation between pages.",
+        "tags": [
+          "routing",
+          "browser"
+        ],
+        "id": "dec-002",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "title": "State Management",
+        "summary": "Cart state is managed using Context, with CartProvider as the provider component.",
+        "tags": [
+          "state",
+          "context"
+        ],
+        "id": "dec-003",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "title": "Data Storage",
+        "summary": "Product data is stored in a static JavaScript file, and cart data is persisted in localStorage.",
+        "tags": [
+          "data",
+          "storage"
+        ],
+        "id": "dec-004",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "title": "Tailwind CSS",
+        "summary": "Tailwind, a Utility-First CSS library, is chosen for styling, offering class composition directly in HTML.",
+        "tags": [
+          "css",
+          "styling",
+          "utility-first"
+        ],
+        "id": "dec-005",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "title": "Rubik Font",
+        "summary": "The Rubik font is selected as the default, supporting Hebrew and providing a consistent look.",
+        "tags": [
+          "font",
+          "hebrew"
+        ],
+        "id": "dec-006",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "title": "React Router 6",
+        "summary": "React Router 6 נבחר כספרייה לניווט, עם שימוש ב-BrowserRouter לעטיפת האפליקציה.",
+        "tags": [
+          "ספרייה",
+          "ניווט",
+          "React Router"
+        ],
+        "id": "dec-007",
+        "source": {
+          "tool": "claude",
+          "file": "04-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\04-routing.md"
+        }
+      },
+      {
+        "title": "React NavLink",
+        "summary": "NavLink component is used for navigation links, automatically marking the active link.",
+        "tags": [
+          "react",
+          "navigation"
+        ],
+        "id": "dec-008",
+        "source": {
+          "tool": "claude",
+          "file": "05-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\05-components.md"
+        }
+      },
+      {
+        "title": "React Context for Cart",
+        "summary": "The cart state is managed using React Context, with a global Context updated by the 'add' function.",
+        "tags": [
+          "react",
+          "state management"
+        ],
+        "id": "dec-009",
+        "source": {
+          "tool": "claude",
+          "file": "05-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\05-components.md"
+        }
+      },
+      {
+        "title": "Gradient Background",
+        "summary": "The home page's hero section uses a gradient background with CSS classes `bg-gradient-to-l from-brand-600 to-brand-500`.",
+        "tags": [
+          "styling",
+          "home"
+        ],
+        "id": "dec-010",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "title": "React Keys",
+        "summary": "React requires unique keys for efficient list rendering, as demonstrated in the `ProductCard` mapping.",
+        "tags": [
+          "react",
+          "performance"
+        ],
+        "id": "dec-011",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "title": "useMemo for Filtering",
+        "summary": "The `useMemo` hook is used to optimize filtering and sorting logic in the product catalog, recomputing only when dependencies change.",
+        "tags": [
+          "react",
+          "performance"
+        ],
+        "id": "dec-012",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "title": "Copy Array Before Sorting",
+        "summary": "Using `[...list].sort(...)` instead of `list.sort(...)` to avoid modifying the original array when sorting products.",
+        "tags": [
+          "javascript",
+          "arrays"
+        ],
+        "id": "dec-013",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "title": "Local State for Checkout",
+        "summary": "The `checkedOut` state is kept locally in the `Cart` component as it's page-specific, not using a global context.",
+        "tags": [
+          "react",
+          "state management"
+        ],
+        "id": "dec-014",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "title": "Data Format",
+        "summary": "הנתונים מוגדרים כקבצי JavaScript סטטיים, ללא שרת או API.",
+        "tags": [
+          "data storage",
+          "static data"
+        ],
+        "id": "dec-015",
+        "source": {
+          "tool": "claude",
+          "file": "07-data.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\07-data.md"
+        }
+      },
+      {
+        "title": "Image Optimization",
+        "summary": "שימוש בפרמטר `?w=600` ב-Unsplash URLs כדי לקבל תמונות ברוחב 600px, חוסך רוחב פס.",
+        "tags": [
+          "performance",
+          "image loading"
+        ],
+        "id": "dec-016",
+        "source": {
+          "tool": "claude",
+          "file": "07-data.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\07-data.md"
+        }
+      },
+      {
+        "title": "Lazy Loading",
+        "summary": "הוספת `loading=\"lazy\"` לתמונות מחוץ למסך, לטעינה רק בעת גלילה אליהן.",
+        "tags": [
+          "performance",
+          "image rendering"
+        ],
+        "id": "dec-017",
+        "source": {
+          "tool": "claude",
+          "file": "07-data.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\07-data.md"
+        }
+      },
+      {
+        "title": "React Context",
+        "summary": "React Context נבחר כדי לספק את ה-state של סל הקניות, המאפשר גישה אליו מכל רכיב.",
+        "tags": [
+          "state management",
+          "react"
+        ],
+        "id": "dec-018",
+        "source": {
+          "tool": "claude",
+          "file": "08-cart.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\08-cart.md"
+        }
+      },
+      {
+        "title": "useReducer",
+        "summary": "useReducer נבחר על פני useState לניהול ה-state של סל הקניות, בזכות ארגון לוגיקת ה-actions וקלות הבדיקה.",
+        "tags": [
+          "react",
+          "state management"
+        ],
+        "id": "dec-019",
+        "source": {
+          "tool": "claude",
+          "file": "08-cart.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\08-cart.md"
+        }
+      },
+      {
+        "title": "שמירת state ב-localStorage",
+        "summary": "ה-state של סל הקניות נשמר ב-localStorage, מאפשר המשכיות בין ביקורים.",
+        "tags": [
+          "persistence",
+          "localstorage"
+        ],
+        "id": "dec-020",
+        "source": {
+          "tool": "claude",
+          "file": "08-cart.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\08-cart.md"
+        }
+      },
+      {
+        "title": "React Form State",
+        "summary": "הטופס מנוהל באמצעות React state, עם שימוש ב-controlled inputs.",
+        "tags": [
+          "react",
+          "state management"
+        ],
+        "id": "dec-021",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "title": "Generic Handler",
+        "summary": "שימוש ב-handler אחד, `handleChange`, עבור כל השדות באמצעות computed property.",
+        "tags": [
+          "react",
+          "code optimization"
+        ],
+        "id": "dec-022",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "title": "Validation Function",
+        "summary": "פונקציית `validate` בודקת את השדות לפי חוקי הוולידציה.",
+        "tags": [
+          "validation",
+          "form handling"
+        ],
+        "id": "dec-023",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "title": "Submit Handler",
+        "summary": "פונקציית `handleSubmit` מונעת submit מסורתי, מבצעת ולידציה, ומעדכנת את ה-state בהתאם.",
+        "tags": [
+          "react",
+          "form submission"
+        ],
+        "id": "dec-024",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "title": "Internal Component",
+        "summary": "יצירת רכיב `Field` פנימי לשימוש חוזר עבור שדות הטופס.",
+        "tags": [
+          "react",
+          "code organization"
+        ],
+        "id": "dec-025",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "title": "Routing Library",
+        "summary": "Chose React Router for client-side routing.",
+        "tags": [
+          "routing",
+          "react-router"
+        ],
+        "id": "dec-026",
+        "source": {
+          "tool": "copilot",
+          "file": "02-architecture.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\02-architecture.md"
+        }
+      },
+      {
+        "title": "Global State Management",
+        "summary": "React Context is used for global cart state with CartProvider.",
+        "tags": [
+          "state",
+          "react-context"
+        ],
+        "id": "dec-027",
+        "source": {
+          "tool": "copilot",
+          "file": "02-architecture.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\02-architecture.md"
+        }
+      },
+      {
+        "title": "NavLink",
+        "summary": "משתמש ב-NavLink כדי להדגיש קישורים פעילים.",
+        "tags": [
+          "navigation",
+          "ui"
+        ],
+        "id": "dec-028",
+        "source": {
+          "tool": "copilot",
+          "file": "03-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\03-components.md"
+        }
+      },
+      {
+        "title": "useCart",
+        "summary": "משתמש ב-useCart כדי לגשת למספר הפריטים בעגלה.",
+        "tags": [
+          "cart",
+          "react"
+        ],
+        "id": "dec-029",
+        "source": {
+          "tool": "copilot",
+          "file": "03-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\03-components.md"
+        }
+      },
+      {
+        "title": "Sticky Navbar",
+        "summary": "הניווט העליון נשאר במקום בעת גלילה.",
+        "tags": [
+          "ui",
+          "layout"
+        ],
+        "id": "dec-030",
+        "source": {
+          "tool": "copilot",
+          "file": "03-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\03-components.md"
+        }
+      },
+      {
+        "title": "Cart State Management",
+        "summary": "Use React Context and useReducer for global cart state without Redux.",
+        "tags": [
+          "state management",
+          "react"
+        ],
+        "id": "dec-031",
+        "source": {
+          "tool": "copilot",
+          "file": "05-cart-context.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\05-cart-context.md"
+        }
+      },
+      {
+        "title": "State Management",
+        "summary": "Use React's useState hook to manage form state and validation errors.",
+        "tags": [
+          "react",
+          "state management"
+        ],
+        "id": "dec-032",
+        "source": {
+          "tool": "copilot",
+          "file": "08-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\08-forms.md"
+        }
+      },
+      {
+        "title": "Validation Logic",
+        "summary": "Implement a custom validation function to check form fields, using regular expressions for email and message fields.",
+        "tags": [
+          "validation",
+          "regex"
+        ],
+        "id": "dec-033",
+        "source": {
+          "tool": "copilot",
+          "file": "08-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\08-forms.md"
+        }
+      },
+      {
+        "title": "React Router v6.26",
+        "summary": "The project uses React Router v6.26 for routing.",
+        "tags": [
+          "routing",
+          "react-router"
+        ],
+        "id": "dec-034",
+        "source": {
+          "tool": "copilot",
+          "file": "09-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\09-routing.md"
+        }
+      },
+      {
+        "title": "BrowserRouter Setup",
+        "summary": "The BrowserRouter component is used in main.jsx to enable routing hooks for all components.",
+        "tags": [
+          "setup",
+          "browser-router"
+        ],
+        "id": "dec-035",
+        "source": {
+          "tool": "copilot",
+          "file": "09-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\09-routing.md"
+        }
+      },
+      {
+        "title": "useMemo for Filtering",
+        "summary": "Use useMemo to optimize filtering of products, re-rendering only when dependencies change.",
+        "tags": [
+          "performance",
+          "react"
+        ],
+        "id": "dec-036",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Lazy Loading Images",
+        "summary": "Implement lazy loading for images to improve performance by loading only when visible.",
+        "tags": [
+          "performance",
+          "react"
+        ],
+        "id": "dec-037",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "line-clamp for Text",
+        "summary": "Use line-clamp CSS property to truncate product descriptions after 2 lines.",
+        "tags": [
+          "ui",
+          "react"
+        ],
+        "id": "dec-038",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Redux DevTools Logger",
+        "summary": "For Redux devtools behavior, add a logger to the reducer function.",
+        "tags": [
+          "debugging",
+          "redux"
+        ],
+        "id": "dec-039",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "React Developer Tools",
+        "summary": "Install React Developer Tools for Chrome/Firefox to inspect state, hooks, and re-renders.",
+        "tags": [
+          "debugging",
+          "react"
+        ],
+        "id": "dec-040",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Immutability in State",
+        "summary": "Ensure state immutability by creating new arrays instead of modifying directly.",
+        "tags": [
+          "state management",
+          "react"
+        ],
+        "id": "dec-041",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Computed Values",
+        "summary": "Compute values like count from items instead of storing in state.",
+        "tags": [
+          "state management",
+          "react"
+        ],
+        "id": "dec-042",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Custom Tailwind Colors",
+        "summary": "Modify tailwind.config.js to add custom brand colors.",
+        "tags": [
+          "styling",
+          "tailwind"
+        ],
+        "id": "dec-043",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Group Hover Effect",
+        "summary": "Use group and group-hover classes for hover effects on product cards.",
+        "tags": [
+          "ui",
+          "tailwind"
+        ],
+        "id": "dec-044",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "RTL Support in Tailwind",
+        "summary": "Tailwind supports RTL with text-right and margin classes that auto-flip.",
+        "tags": [
+          "rtl",
+          "tailwind"
+        ],
+        "id": "dec-045",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Multiple Field Search",
+        "summary": "Search in multiple fields (name, nameEn, description) for Hebrew and English text.",
+        "tags": [
+          "search",
+          "javascript"
+        ],
+        "id": "dec-046",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Locale-Aware Sorting",
+        "summary": "Use localeCompare for sorting product names with Hebrew collation.",
+        "tags": [
+          "sorting",
+          "javascript"
+        ],
+        "id": "dec-047",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Versioning localStorage",
+        "summary": "Version localStorage keys to handle schema changes.",
+        "tags": [
+          "storage",
+          "javascript"
+        ],
+        "id": "dec-048",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "aria-label for Buttons",
+        "summary": "Use aria-label for accessibility, especially on buttons with short text.",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "id": "dec-049",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "alt Text for Images",
+        "summary": "Always provide alt text for images, used in most img tags.",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "id": "dec-050",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Build and Preview",
+        "summary": "Build and preview locally before deploying with npm run build and npm run preview.",
+        "tags": [
+          "deployment",
+          "npm"
+        ],
+        "id": "dec-051",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "title": "Environment Variables",
+        "summary": "Create .env.local for environment-specific variables, accessed via import.meta.env.",
+        "tags": [
+          "configuration",
+          "react"
+        ],
+        "id": "dec-052",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      }
+    ],
+    "rules": [
+      {
+        "rule": "Use RTL for all Hebrew text.",
+        "scope": "general",
+        "notes": "Ensure the `dir` attribute is set to `rtl` in the `<html>` tag.",
+        "id": "rule-001",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "rule": "Start with Mobile-First approach for responsive design.",
+        "scope": "styling",
+        "notes": "Begin with `grid-cols-1` and adjust for larger screens using breakpoints.",
+        "id": "rule-002",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "rule": "Define brand colors as tokens in `tailwind.config.js`.",
+        "scope": "styling",
+        "notes": "Use the format `brand.50-700` for brand color tokens.",
+        "id": "rule-003",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "rule": "Create component-specific classes in the CSS layer.",
+        "scope": "styling",
+        "notes": "Examples: `.btn-primary`, `.btn-ghost`, `.card`.",
+        "id": "rule-004",
+        "source": {
+          "tool": "claude",
+          "file": "00-overview.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\00-overview.md"
+        }
+      },
+      {
+        "rule": "הגדר את תגית 'lang' כ-'he' ואת תגית 'dir' כ-'rtl' בקובץ HTML הראשי.",
+        "scope": "general",
+        "notes": "זה מבטיח שהאתר יוצג כראוי מימין לשמאל.",
+        "id": "rule-005",
+        "source": {
+          "tool": "claude",
+          "file": "01-setup.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\01-setup.md"
+        }
+      },
+      {
+        "rule": "Tailwind configuration should specify content paths and custom theme extensions.",
+        "scope": "styling",
+        "notes": "This ensures Tailwind only processes used classes and applies custom brand colors/fonts.",
+        "id": "rule-006",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "Import font before @tailwind directives in CSS files.",
+        "scope": "styling",
+        "notes": "Prevents build warnings.",
+        "id": "rule-007",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "Use `@layer components` to create custom classes that can be overridden by Tailwind utilities.",
+        "scope": "styling",
+        "id": "rule-008",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "Use `.btn-primary`, `.btn-ghost`, and `.card` classes for specific UI components.",
+        "scope": "ui",
+        "id": "rule-009",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "Use Tailwind's standard breakpoints for responsive design.",
+        "scope": "ui",
+        "notes": "Prefixes like `sm:`, `md:`, etc. control layout based on device width.",
+        "id": "rule-010",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "Set `dir=\"rtl\"` on the `<html>` tag for automatic RTL support.",
+        "scope": "general",
+        "notes": "Tailwind will automatically adjust margins and directions for right-to-left languages.",
+        "id": "rule-011",
+        "source": {
+          "tool": "claude",
+          "file": "02-tailwind.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\02-tailwind.md"
+        }
+      },
+      {
+        "rule": "כל תיקייה אחראית על משהו אחד.",
+        "scope": "general",
+        "notes": "למשל, 'src/components' מכילה קומפוננטות משותפות, 'src/pages' מכילה עמודים שלמים, וכו'.",
+        "id": "rule-012",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "קומפוננטות: PascalCase",
+        "scope": "styling",
+        "notes": null,
+        "id": "rule-013",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "Hooks: camelCase עם prefix 'use'",
+        "scope": "styling",
+        "notes": null,
+        "id": "rule-014",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "קבצי data: camelCase",
+        "scope": "styling",
+        "notes": null,
+        "id": "rule-015",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "תיקיות: lowercase",
+        "scope": "styling",
+        "notes": null,
+        "id": "rule-016",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "ב-Vite, יש לכתוב את סיומת הקובץ המלאה ב-imports.",
+        "scope": "general",
+        "notes": "למשל, 'import ProductCard from '../components/ProductCard.jsx''.",
+        "id": "rule-017",
+        "source": {
+          "tool": "claude",
+          "file": "03-structure.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\03-structure.md"
+        }
+      },
+      {
+        "rule": "השתמש ב-`<Link>` במקום `<a href>` לניווט בצד הלקוח ללא טעינה מחדש.",
+        "scope": "ניווט",
+        "notes": "זה שומר על ה-state של האפליקציה.",
+        "id": "rule-018",
+        "source": {
+          "tool": "claude",
+          "file": "04-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\04-routing.md"
+        }
+      },
+      {
+        "rule": "עבור פרמטרים דינמיים ב-URL, השתמש ב-`useParams()`.",
+        "scope": "ניווט",
+        "notes": "זכור שהפונקציה מחזירה תמיד מחרוזת, והמר למספר אם צריך.",
+        "id": "rule-019",
+        "source": {
+          "tool": "claude",
+          "file": "04-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\04-routing.md"
+        }
+      },
+      {
+        "rule": "Use 'end' prop in NavLink for homepage only",
+        "scope": "ui",
+        "notes": "Ensures the homepage is only marked as active at the root URL, not sub-paths.",
+        "id": "rule-020",
+        "source": {
+          "tool": "claude",
+          "file": "05-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\05-components.md"
+        }
+      },
+      {
+        "rule": "Use custom classes for product card zoom effect",
+        "scope": "styling",
+        "notes": "Apply 'group' class to the product card and 'group-hover:scale-105' to the image for zoom on hover.",
+        "id": "rule-021",
+        "source": {
+          "tool": "claude",
+          "file": "05-components.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\05-components.md"
+        }
+      },
+      {
+        "rule": "Use `key={p.id}` when mapping over lists in React to ensure efficient updates.",
+        "scope": "react",
+        "notes": "This is essential for React's reconciliation process.",
+        "id": "rule-022",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "rule": "Always copy arrays before sorting to avoid modifying the original data.",
+        "scope": "javascript",
+        "notes": "This is a general best practice to ensure data integrity.",
+        "id": "rule-023",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "rule": "שימוש ב-`Set` כדי להבטיח קטגוריות ייחודיות ב-`getCategories()`",
+        "scope": "data processing",
+        "notes": "מבטיח שלא יהיו כפילויות ברשימת הקטגוריות.",
+        "id": "rule-024",
+        "source": {
+          "tool": "claude",
+          "file": "07-data.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\07-data.md"
+        }
+      },
+      {
+        "rule": "המרה של `id` ל-`Number` ב-`getProductById()`",
+        "scope": "data retrieval",
+        "notes": "נדרש כי `useParams()` מחזיר מחרוזת.",
+        "id": "rule-025",
+        "source": {
+          "tool": "claude",
+          "file": "07-data.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\07-data.md"
+        }
+      },
+      {
+        "rule": "זריקת שגיאה ב-useCart",
+        "scope": "general",
+        "notes": "אם useCart() משמש מחוץ ל-CartProvider, יש לזרוק שגיאה ברורה במקום להחזיר undefined.",
+        "id": "rule-026",
+        "source": {
+          "tool": "claude",
+          "file": "08-cart.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\08-cart.md"
+        }
+      },
+      {
+        "rule": "השתמש ב-controlled inputs ב-React כדי לנהל את ערכי השדות.",
+        "scope": "ui",
+        "notes": "מאפשר עיבוד, הגבלה, או שינוי של הקלט בזמן אמת.",
+        "id": "rule-027",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "rule": "השתמש ב-computed property כדי ליצור handler גנרי עבור מספר שדות.",
+        "scope": "ui",
+        "notes": "מאפשר שימוש ב-handler אחד עבור מספר שדות עם שמות דינמיים.",
+        "id": "rule-028",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "rule": "בצע ולידציה של השדות לפני שליחת הטופס.",
+        "scope": "ui",
+        "notes": "מבטיח שהנתונים תקפים לפני ביצוע פעולה כלשהי.",
+        "id": "rule-029",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "rule": "השתמש ב-`e.preventDefault()` כדי למנוע submit מסורתי של הטופס.",
+        "scope": "ui",
+        "notes": "מאפשר שליטה מלאה על התנהגות הטופס.",
+        "id": "rule-030",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "rule": "הצג הודעות שגיאה באופן ויזואלי ליד השדות הרלוונטיים.",
+        "scope": "ui",
+        "notes": "מספק משוב מיידי למשתמש.",
+        "id": "rule-031",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "rule": "Use 'Rubik' font for Hebrew-friendly text rendering.",
+        "scope": "styling",
+        "notes": "This font supports both English and Hebrew characters.",
+        "id": "rule-032",
+        "source": {
+          "tool": "copilot",
+          "file": "07-styling.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\07-styling.md"
+        }
+      },
+      {
+        "rule": "Set text direction to 'text-right' for RTL languages.",
+        "scope": "styling",
+        "notes": "This is an automatic setting in CSS.",
+        "id": "rule-033",
+        "source": {
+          "tool": "copilot",
+          "file": "07-styling.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\07-styling.md"
+        }
+      },
+      {
+        "rule": "Use logical margin/padding properties like 'start' and 'end' for RTL support.",
+        "scope": "styling",
+        "id": "rule-034",
+        "source": {
+          "tool": "copilot",
+          "file": "07-styling.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\07-styling.md"
+        }
+      },
+      {
+        "rule": "Use Hebrew text for error messages.",
+        "scope": "ui",
+        "notes": "Ensure error messages are in Hebrew for a localized user experience.",
+        "id": "rule-035",
+        "source": {
+          "tool": "copilot",
+          "file": "08-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\08-forms.md"
+        }
+      },
+      {
+        "rule": "Use specific CSS classes for form elements.",
+        "scope": "styling",
+        "notes": "Apply consistent styling to form inputs, labels, and error messages.",
+        "id": "rule-036",
+        "source": {
+          "tool": "copilot",
+          "file": "08-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\08-forms.md"
+        }
+      },
+      {
+        "rule": "Use `<Link>` or `<NavLink>` for navigation to avoid page refresh.",
+        "scope": "general",
+        "notes": "This is a best practice to ensure smooth navigation without disrupting the user experience.",
+        "id": "rule-037",
+        "source": {
+          "tool": "copilot",
+          "file": "09-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\09-routing.md"
+        }
+      },
+      {
+        "rule": "Use `useNavigate()` hook for programmatic navigation.",
+        "scope": "general",
+        "notes": "This provides a more controlled way to navigate between routes.",
+        "id": "rule-038",
+        "source": {
+          "tool": "copilot",
+          "file": "09-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\09-routing.md"
+        }
+      },
+      {
+        "rule": "Use useMemo for filtering to avoid unnecessary re-renders.",
+        "scope": "performance",
+        "notes": "This ensures that the filter operation is only performed when dependencies change.",
+        "id": "rule-039",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Always use lazy loading for images to improve page load times.",
+        "scope": "ui",
+        "notes": "This ensures images are loaded only when they become visible in the viewport.",
+        "id": "rule-040",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Truncate long text with line-clamp CSS property.",
+        "scope": "ui",
+        "notes": "This provides a clean way to show a limited amount of text with an ellipsis.",
+        "id": "rule-041",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Install React Developer Tools for state inspection.",
+        "scope": "debugging",
+        "notes": "This is a useful tool to understand component behavior and state changes.",
+        "id": "rule-042",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Always create new arrays for state, never modify directly.",
+        "scope": "state management",
+        "notes": "This ensures immutability and avoids unexpected side effects.",
+        "id": "rule-043",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Compute values from state instead of storing them directly.",
+        "scope": "state management",
+        "notes": "This reduces state complexity and makes updates more efficient.",
+        "id": "rule-044",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Customize Tailwind colors in tailwind.config.js.",
+        "scope": "styling",
+        "notes": "This allows for brand-specific colors and design.",
+        "id": "rule-045",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Use group and group-hover classes for interactive hover effects.",
+        "scope": "ui",
+        "notes": "This provides a clean way to add hover animations to groups of elements.",
+        "id": "rule-046",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Tailwind supports RTL with text-right and margin classes.",
+        "scope": "rtl",
+        "notes": "This ensures proper text direction and margin behavior for RTL languages.",
+        "id": "rule-047",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Search in multiple fields for Hebrew and English text.",
+        "scope": "search",
+        "notes": "This ensures comprehensive search results across different languages.",
+        "id": "rule-048",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Use localeCompare for sorting with Hebrew collation.",
+        "scope": "sorting",
+        "notes": "This ensures correct sorting order for Hebrew text.",
+        "id": "rule-049",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Version localStorage keys to handle schema changes.",
+        "scope": "storage",
+        "notes": "This ensures data integrity and compatibility across different versions.",
+        "id": "rule-050",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Always provide aria-label for accessibility, especially on buttons.",
+        "scope": "accessibility",
+        "notes": "This ensures screen readers can convey the button's purpose.",
+        "id": "rule-051",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Always provide alt text for images.",
+        "scope": "accessibility",
+        "notes": "This ensures users with visual impairments understand the image content.",
+        "id": "rule-052",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Build and preview locally before deploying.",
+        "scope": "deployment",
+        "notes": "This ensures the build is correct and avoids potential issues on the live site.",
+        "id": "rule-053",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "rule": "Use .env.local for environment-specific variables.",
+        "scope": "configuration",
+        "notes": "This ensures sensitive data is not committed to version control.",
+        "id": "rule-054",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "area": "ניווט",
+        "message": "אל תשתמש ב-`<a href>` בניווט, זה יגרום לטעינה מחדש של הדף.",
+        "severity": "medium",
+        "id": "warn-001",
+        "source": {
+          "tool": "claude",
+          "file": "04-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\04-routing.md"
+        }
+      },
+      {
+        "area": "routing",
+        "message": "Ensure that the `useParams` hook is used correctly to extract dynamic route parameters, as shown in `ProductDetail.jsx`.",
+        "severity": "medium",
+        "id": "warn-002",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "area": "state management",
+        "message": "Be cautious when managing state locally within components. In more complex scenarios, consider using a state management solution like React Context or Redux.",
+        "severity": "low",
+        "id": "warn-003",
+        "source": {
+          "tool": "claude",
+          "file": "06-pages.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\06-pages.md"
+        }
+      },
+      {
+        "area": "validation",
+        "message": "ה-regex לאימייל הוא פשוט ולא מכסה את כל המקרים. שליחת אימייל אמת לאישור היא דרך בטוחה יותר ב-Production.",
+        "severity": "medium",
+        "id": "warn-004",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "area": "accessibility",
+        "message": "ARIA attributes לא הוספו לרכיבים, מה שעלול להשפיע על נגישות.",
+        "severity": "low",
+        "id": "warn-005",
+        "source": {
+          "tool": "claude",
+          "file": "09-forms.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\claude\\09-forms.md"
+        }
+      },
+      {
+        "area": "routing",
+        "message": "Avoid using `window.location.href` for navigation as it refreshes the page.",
+        "severity": "medium",
+        "id": "warn-006",
+        "source": {
+          "tool": "copilot",
+          "file": "09-routing.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\09-routing.md"
+        }
+      },
+      {
+        "area": "cart",
+        "message": "If cart data is not saving, clear localStorage and unload the page.",
+        "severity": "medium",
+        "id": "warn-007",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "area": "images",
+        "message": "Check image URLs, CORS issues, and the Network tab in devtools if images are not loading.",
+        "severity": "medium",
+        "id": "warn-008",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      },
+      {
+        "area": "styling",
+        "message": "If Tailwind styling is not working, check content path, dev server status, and try restarting.",
+        "severity": "medium",
+        "id": "warn-009",
+        "source": {
+          "tool": "copilot",
+          "file": "10-tips.md",
+          "file_path": "D:\\AI course\\Project With Ai Agents\\copilot\\10-tips.md"
+        }
+      }
+    ]
+  }
+}
